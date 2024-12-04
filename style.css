@@ -1,0 +1,167 @@
+/****overall default style****/
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/*******nav bar style*********/
+.navbar{
+background-color: rgb(35, 4, 10) !important;
+position: fixed !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active:hover  
+{
+color: rgb(210, 11, 51);
+ background-color: rgb(203, 113, 48);
+ 
+}
+
+/* /* #home, #about, #course-modules, #register, #contact {
+  opacity: 0;
+  transform: translateY(50px);
+} */
+/* #home:hover, #about:hover, #course-modules:hover, #register:hover, #contact:hover {
+  opacity: 1;
+  transform: translateY(0);
+} */ 
+
+/****home design   ****/
+#home{
+animation-name: interact;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+@keyframes interact{
+  0%,50%, 100%{
+    background-image: url("https://www.mytaskpanel.com/wp-content/uploads/2023/04/consulting-blog-09.webp");
+   filter: brightness(70%);
+  }
+25%{
+ background-image: url("https://media.istockphoto.com/id/1432248858/photo/smiling-male-programmer-explains-a-coding-technique-to-a-new-female-colleague-while-sitting.jpg?s=1024x1024&w=is&k=20&c=6nD5lpCVBVlvyb1bwFI-UP8ba9QXlis0vIBRdHbH-So=");
+ filter: brightness(70%);
+}
+75%{
+  background-image: url("https://img.freepik.com/premium-photo/coder-engineer-working-with-his-pc_1293807-7702.jpg?w=740");
+  filter: brightness(70%);
+}
+}
+
+
+/*****About Design******/
+  #about{
+  animation-name: about;
+animation-duration: 5s;
+}
+
+
+
+@keyframes about{
+  0%{
+    transform: translateX(-150%);
+  
+  }
+  100%{
+     transform: translateX(0);
+  }
+}
+
+/**********Course design********/
+
+
+#course-modules>div>div:hover{
+  transition: all 2s;
+  transform: scale(1.1);
+}
+
+#course-modules>div>div{
+  height: 400px;
+  overflow: hidden;
+}
+ #course-modules{
+  animation-name: course;
+  animation-duration: 5s;
+ 
+}
+#content1,#content2,#content3{
+  color: white;
+  position: relative;
+padding: 20px;
+ margin-top: 100px;
+  bottom: 80px;
+  font-weight: 1000;
+}
+#content1{
+  color:black;
+}
+@keyframes course{
+  0%{
+    transform: translateX(150%);
+  
+  }
+  100%{
+     transform: translateX(0);
+  }
+} 
+
+
+/**********Register  design********/
+ #register{
+  animation-name: bottom;
+  animation-duration: 5s;
+}
+@keyframes register{
+  0%{
+    transform: translateY(150%);
+  
+  }
+  100%{
+     transform: translateY(0);
+  }
+} 
+/*****contact Design******/
+ #contact{
+  animation-name: contact;
+  animation-duration: 5s;
+  
+}
+@keyframes contact{
+  0%{
+    transform: translateY(-150%);
+  
+  }
+  100%{
+     transform: translateY(0);
+  }
+} 
+
+/*********Responsive to all screens**********/
+@media only screen and (max-width:992px){
+  .navbar-dark .navbar-nav .nav-link.active{
+    position: relative !important;
+    left:50%;
+    display: inline-flex;
+padding: 10px;
+    }
+    
+}
+@media only screen and (min-width:300px ) and (max-width:1100px) {
+  #contact iframe{
+    width:280px;
+  }
+}
+@media only screen and (min-width:300px ) and (max-width:327px) {
+  #course-modules>div>.backend{
+    height: 440px;
+  }
+}
+
+ 
+
+
+
